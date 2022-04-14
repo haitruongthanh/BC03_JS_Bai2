@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bai2-JS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      section {
+        height: 100vh;
+      }
+
+      label {
+        font-size: 25px;
+        font-weight: 700;
+      }
+      .bai1 {
+        background: linear-gradient(to right, #c06c84, #6c5b7b, #355c7d);
+      }
+
+      .bai2 {
+        background: linear-gradient(to right, #636fa4, #e8cbc0);
+      }
+
+      .bai3 {
+        background: linear-gradient(to right, #3b4371, #f3904f);
+      }
+
+      .bai4 {
+        background: linear-gradient(to right, #f29492, #114357);
+      }
+      .bai5 {
+        background: linear-gradient(to right, #7aa1d2, #dbd4b4, #cc95c0);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Bài 1 -->
+    <section class="bai1">
+      <div class="container h-100">
+        <div
+          class="bai1-wrapper d-flex flex-column justify-content-center align-items-center h-100 text-light"
+        >
+          <h2>Bài 1</h2>
+          <h4>Tính lương nhân viên</h4>
+          <div class="bai1-calculator border-top border-bottom p-5 d-flex">
+            <div class="bai1-input p-5">
+              <div class="form-group">
+                <label for="so-ngay-lam-viec">Số ngày làm việc</label>
+                <input
+                  type="text"
+                  name=""
+                  id="so-ngay-lam-viec"
+                  class="form-control my-3"
+                  placeholder=""
+                  aria-describedby="helpId"
+                />
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary px-5 my-2"
+                onclick="tinhLuong()"
+              >
+                Tính lương
+              </button>
+            </div>
+            <div class="bai1-output p-5">
+              <div class="bai1-result p-5">
+                <h3 id="ket-qua"></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hết Bài 1 -->
+
+    <!-- Bài 2 -->
+    <section class="bai2">
+      <div class="container h-100">
+        <div
+          class="bai2-wrapper d-flex flex-column justify-content-center align-items-center h-100 text-dark"
+        >
+          <h2>Bài 2</h2>
+          <h4>Tính giá trị trung bình</h4>
+          <div class="bai2-calculator border-top border-bottom p-5">
+            <div class="bai2-input p-5 text-center">
+              <div class="bai2-input-value d-flex">
+                <div class="form-group mx-2">
+                  <label for="gia-tri-1">Nhập giá trị thứ nhất</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="gia-tri-1"
+                    class="form-control"
+                    placeholder=""
+                    aria-describedby="helpId"
+                  />
+                </div>
+                <div class="form-group mx-2">
+                  <label for="gia-tri-2">Nhập giá trị thứ hai</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="gia-tri-2"
+                    class="form-control"
+                    placeholder=""
+                    aria-describedby="helpId"
+                  />
+                </div>
+                <div class="form-group mx-2">
+                  <label for="gia-tri-3">Nhập giá trị thứ ba</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="gia-tri-3"
+                    class="form-control"
+                    placeholder=""
+                    aria-describedby="helpId"
+                  />
+                </div>
+                <div class="form-group mx-2">
+                  <label for="gia-tri-4">Nhập giá trị thứ tư</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="gia-tri-4"
+                    class="form-control"
+                    placeholder=""
+                    aria-describedby="helpId"
+                  />
+                </div>
+                <div class="form-group mx-2">
+                  <label for="gia-tri-5">Nhập giá trị thứ năm</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="gia-tri-5"
+                    class="form-control"
+                    placeholder=""
+                    aria-describedby="helpId"
+                  />
+                </div>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary px-5"
+                onclick="tinhTrungBinh()"
+              >
+                Tính trung bình
+              </button>
+            </div>
+            <div class="bai2-output p-1 text-center">
+              <div class="bai2-result p-1">
+                <h3 id="ket-qua-trung-binh"></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HếtBài 2 -->
+
+    <!-- Bài 3 -->
+    <section class="bai3">
+      <div class="container h-100">
+        <div
+          class="bai3-wrapper d-flex flex-column justify-content-center align-items-center h-100 text-light"
+        >
+          <h2>Bài 3</h2>
+          <h4>Quy đổi tiền</h4>
+          <div class="bai3-calculator border-top border-bottom p-5 d-flex">
+            <div class="bai3-input p-5">
+              <div class="form-group">
+                <label for="ngoai-te">Tỷ giá: 23,500 VND/USD</label><br />
+                <label for="ngoai-te">Nhập số tiền USD</label>
+                <input
+                  type="text"
+                  name=""
+                  id="ngoai-te"
+                  class="form-control my-3"
+                  placeholder=""
+                  aria-describedby="helpId"
+                />
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary px-5 my-2"
+                onclick="quyDoi()"
+              >
+                Quy đổi VND
+              </button>
+            </div>
+            <div class="bai3-output p-5">
+              <div class="bai3-result p-5">
+                <h3 id="quy-doi-VND"></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hết Bài 3 -->
+
+    <!-- Bài 4 -->
+    <section class="bai4">
+      <div class="container h-100">
+        <div
+          class="bai4-wrapper d-flex flex-column justify-content-center align-items-center h-100 text-light"
+        >
+          <h2>Bài 4</h2>
+          <h4>Tính diện tích, chu vi hình chữ nhật</h4>
+          <div class="bai4-calculator border-top border-bottom p-5">
+            <div class="bai4-input p-5 text-center">
+              <div class="bai4-input-value d-flex">
+                <div class="form-group mx-2">
+                  <label for="chieu-dai">Nhập chiều dài</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="chieu-dai"
+                    class="form-control"
+                    placeholder=""
+                    aria-describedby="helpId"
+                  />
+                </div>
+                <div class="form-group mx-2">
+                  <label for="chieu-rong">Nhập chiều rộng</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="chieu-rong"
+                    class="form-control"
+                    placeholder=""
+                    aria-describedby="helpId"
+                  />
+                </div>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary my-3"
+                onclick="tinhToan()"
+              >
+                Tính Diện tích và Chu vi
+              </button>
+            </div>
+            <div class="bai4-output p-1 text-center">
+              <div class="bai4-result p-1">
+                <h3 id="dien-tich"></h3>
+                <h3 id="chu-vi"></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hết Bài 4 -->
+
+    <!-- Bài 5 -->
+    <section class="bai5">
+      <div class="container h-100">
+        <div
+          class="bai5-wrapper d-flex flex-column justify-content-center align-items-center h-100 text-dark"
+        >
+          <h2>Bài 5</h2>
+          <h4>Tính tổng hai ký số</h4>
+          <div class="bai5-calculator border-top border-bottom p-5 d-flex">
+            <div class="bai5-input p-5">
+              <div class="form-group">
+                <label for="so-can-tinh">Nhập số cần tính</label>
+                <input
+                  type="text"
+                  name=""
+                  id="so-can-tinh"
+                  class="form-control my-3"
+                  placeholder=""
+                  aria-describedby="helpId"
+                />
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary px-5 my-2"
+                onclick="tinhKySo()"
+              >
+                Tính tổng ký số
+              </button>
+            </div>
+            <div class="bai5-output p-5">
+              <div class="bai5-result p-5">
+                <h3 id="tong-ky-so"></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hết Bài 5 -->
+
+    <!-- Optional JavaScript -->
+    <script src="./Bai1.js"></script>
+    <script src="./Bai2.js"></script>
+    <script src="./Bai3.js"></script>
+    <script src="./Bai4.js"></script>
+    <script src="./Bai5.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
