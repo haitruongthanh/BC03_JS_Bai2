@@ -36,22 +36,44 @@
         font-weight: 700;
       }
       .bai1 {
-        background: linear-gradient(to right, #c06c84, #6c5b7b, #355c7d);
+        background: linear-gradient(-45deg, #c06c84, #6c5b7b, #355c7d);
       }
 
       .bai2 {
-        background: linear-gradient(to right, #636fa4, #e8cbc0);
+        background: linear-gradient(-45deg, #636fa4, #e8cbc0);
       }
 
       .bai3 {
-        background: linear-gradient(to right, #3b4371, #f3904f);
+        background: linear-gradient(-45deg, #3b4371, #f3904f);
       }
 
       .bai4 {
-        background: linear-gradient(to right, #f29492, #114357);
+        background: linear-gradient(-45deg, #f29492, #114357);
       }
       .bai5 {
-        background: linear-gradient(to right, #7aa1d2, #dbd4b4, #cc95c0);
+        background: linear-gradient(-45deg, #7aa1d2, #dbd4b4, #cc95c0);
+      }
+
+      .bai1,
+      .bai2,
+      .bai3,
+      .bai4,
+      .bai5 {
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
       }
     </style>
   </head>
